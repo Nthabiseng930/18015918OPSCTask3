@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".SettingActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/settingsGoBackIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:src="@drawable/back_arrow1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="@color/txt_color"
+            android:text="Settings"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:fontFamily="@font/roboto_light"/>
+
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="80dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/logo"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="278dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="46dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="Please select a system metric"
+            android:textColor="@android:color/background_dark"
+            android:textSize="22dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioGroup
+            android:id="@+id/rbGroup"
+            android:layout_width="170dp"
+            android:layout_height="137dp"
+            android:layout_marginStart="47dp"
+            android:layout_marginEnd="194dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RadioButton
+                android:id="@+id/metric"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:fontFamily="@font/roboto_light"
+                android:text="Metric" />
+            <RadioButton
+                android:id="@+id/imperial"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:fontFamily="@font/roboto_light"
+                android:text="Imperial" />
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="1">
+
+        <TextView
+            android:id="@+id/targetTV"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/black_rect"
+            android:fontFamily="@font/roboto_light"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:padding="15dp"
+            android:text="Targets"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/weighTrackTV"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/black_rect"
+            android:fontFamily="@font/roboto_light"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:padding="15dp"
+            android:text="Track Weight"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/saveSettingsTV"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/black_rect"
+        android:fontFamily="@font/roboto_light"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:padding="15dp"
+        android:text="Save"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+</LinearLayout>

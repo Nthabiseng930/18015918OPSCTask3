@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".RecordMealActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/recordMealGoBackIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:src="@drawable/back_arrow1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="@color/txt_color"
+            android:text="Record Meal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:fontFamily="@font/roboto_light"/>
+
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="80dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/logo"/>
+
+    <TextView
+        android:id="@+id/selectImage"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:background="@drawable/black_rect"
+        android:fontFamily="@font/roboto_light"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:padding="15dp"
+        android:text="Select Image"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+    <ScrollView
+        android:id="@+id/imagesbar"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:id="@+id/horizontalLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"></LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/saveMealTV"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/black_rect"
+        android:fontFamily="@font/roboto_light"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:padding="15dp"
+        android:text="Upload"
+        android:textColor="@color/white"
+        android:textSize="18dp">
+
+
+    </TextView>
+
+</LinearLayout>
